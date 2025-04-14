@@ -1,0 +1,22 @@
+@use './reset' as *;
+@use './typo' as *;
+
+.heading {
+  @include DMSans(700, 2rem);
+}
+
+.body {
+  @include DMSans(400, 1rem);
+}
+
+.label {
+  @include DMSans(400, 0.875rem);
+}
+
+.small-text {
+  @include DMSans(400, 0.625rem);
+}
+
+.price-text {
+  @include DMSans(400, 0.75rem);
+}
