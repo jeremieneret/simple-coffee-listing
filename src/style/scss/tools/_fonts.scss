@@ -1,16 +1,21 @@
 @use './reset' as *;
 @use './typo' as *;
+@use './colors' as *;
 
 .heading {
   @include DMSans(700, 2rem);
+  margin-bottom: 8px;
+  color: $bridesmaid;
 }
 
-.body {
-  @include DMSans(400, 1rem);
+.description {
+  @include DMSans(500, 1rem);
+  margin-bottom: 20px;
+  color: $pale-sky;
 }
 
 .label {
-  @include DMSans(400, 0.875rem);
+  @include DMSans(700, 0.875rem);
 }
 
 .small-text {

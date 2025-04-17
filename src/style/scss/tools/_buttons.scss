@@ -1,0 +1,16 @@
+@use "./colors" as *;
+
+button {
+  padding: 8px 12px !important;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+  margin-right: 12px; 
+
+  &:focus,
+  &.active {
+    background-color: $trout;
+    outline: none;
+  }
+}

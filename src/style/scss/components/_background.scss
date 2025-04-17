@@ -1,20 +1,25 @@
 @use '../tools' as *;
 
-.background {
-  width: 100vw;
-  height: 100vh;
+body {
   background-color: $woodsmoke;
+  display: flex;
+  justify-content: center;
 }
 
+
 .background-img {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
   background-size: cover;
   width: 100vw;
   height: 300px;
-    background-image: url(../../assets/bg-cafe-lg.jpg);
+    background-image: url(/assets/bg-cafe-lg.jpg);
   @include media-max($tablet-xl) {
-    background-image: url(../../assets/bg-cafe.jpg);
+    background-image: url(/assets/bg-cafe.jpg);
   }
   @include media-max($tablet-xs) {
-    background-image: url(../../assets/bg-cafe.jpg);
+    background-image: url(/assets/bg-cafe.jpg);
   }
 }
