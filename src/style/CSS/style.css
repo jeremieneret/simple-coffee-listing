@@ -1,4 +1,18 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+button {
+  padding: 8px 12px !important;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+  margin-right: 12px;
+}
+button:focus, button.active {
+  background-color: #4E5562;
+  outline: none;
+}
+
 *,
 *:before,
 *:after {
@@ -53,7 +67,6 @@ select {
        appearance: none;
   -webkit-appearance: none;
   outline: none;
-  margin: 0;
   border: none;
 }
 
@@ -79,17 +92,21 @@ button {
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
   font-size: 2rem;
+  margin-bottom: 8px;
+  color: #FEF7EE;
 }
 
-.body {
+.description {
   font-family: "DM Sans", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1rem;
+  margin-bottom: 20px;
+  color: #6F757C;
 }
 
 .label {
   font-family: "DM Sans", sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 0.875rem;
 }
 
@@ -105,25 +122,63 @@ button {
   font-size: 0.75rem;
 }
 
-.background {
-  width: 100vw;
-  height: 100vh;
+body {
   background-color: #111315;
+  display: flex;
+  justify-content: center;
 }
 
 .background-img {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
   background-size: cover;
   width: 100vw;
   height: 300px;
-  background-image: url(../../assets/bg-cafe-lg.jpg);
+  background-image: url(/assets/bg-cafe-lg.jpg);
 }
 @media (max-width: 1024px) {
   .background-img {
-    background-image: url(../../assets/bg-cafe.jpg);
+    background-image: url(/assets/bg-cafe.jpg);
   }
 }
 @media (max-width: 640px) {
   .background-img {
-    background-image: url(../../assets/bg-cafe.jpg);
+    background-image: url(/assets/bg-cafe.jpg);
   }
+}
+
+.coffee-list {
+  display: flex;
+  flex-wrap: wrap; /* Permet le retour à la ligne */
+  justify-content: center; /* Centre les éléments horizontalement */
+  gap: 32px; /* Ajoute un espacement entre les éléments */
+  margin: auto; /* Centre la div */
+}
+
+.card {
+  background-color: #ee735d;
+}
+
+.header {
+  width: 480px;
+  height: -moz-fit-content;
+  height: fit-content;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.header-container {
+  display: flex;
+  justify-content: center;
+}
+
+.collection {
+  width: 1094px;
+  height: 855px;
+  background-color: #1B1D1F;
+  z-index: 2;
+  position: relative;
+  border-radius: 12px;
+  padding: 80px 124px;
 }/*# sourceMappingURL=style.css.map */
