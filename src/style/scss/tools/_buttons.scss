@@ -1,6 +1,7 @@
 @use "./colors" as *;
 
 button {
+  color: $bridesmaid;
   padding: 8px 12px !important;
   border-radius: 8px;
   cursor: pointer;

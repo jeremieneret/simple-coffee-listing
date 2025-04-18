@@ -15,6 +15,8 @@ function CoffeeList() {
           "https://raw.githubusercontent.com/devchallenges-io/curriculum/refs/heads/main/4-frontend-libaries/challenges/group_1/data/simple-coffee-listing-data.json"
         );
         setCoffeeData(response.data);
+        console.log(response.data);
+        
       } catch (err) {
         setError(err.message);
       }
@@ -50,8 +52,9 @@ function CoffeeList() {
             name={coffee.name}
             price={coffee.price}
             rating={coffee.rating}
-            numberOfVotes={coffee.numberOfVotes}
+            numberOfVotes={coffee.votes}
             popular={coffee.popular}
+            available={coffee.available}
           />
         ))}
       </div>

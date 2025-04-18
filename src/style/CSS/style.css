@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 button {
+  color: #FEF7EE;
   padding: 8px 12px !important;
   border-radius: 8px;
   cursor: pointer;
@@ -91,7 +92,7 @@ button {
 .heading {
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 32px;
   margin-bottom: 8px;
   color: #FEF7EE;
 }
@@ -99,27 +100,49 @@ button {
 .description {
   font-family: "DM Sans", sans-serif;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 16px;
   margin-bottom: 20px;
   color: #6F757C;
 }
 
-.label {
+.name {
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
-  font-size: 0.875rem;
+  font-size: 16px;
+  color: #FEF7EE;
 }
 
-.small-text {
+.rating {
   font-family: "DM Sans", sans-serif;
-  font-weight: 400;
-  font-size: 0.625rem;
+  font-weight: 700;
+  font-size: 14px;
+  color: #FEF7EE;
+  margin-left: 4px;
 }
 
-.price-text {
+.price {
   font-family: "DM Sans", sans-serif;
-  font-weight: 400;
-  font-size: 0.75rem;
+  font-weight: 700;
+  font-size: 14px;
+  background-color: #BEE3CC;
+  border-radius: 4px;
+  padding: 4px 8px;
+  color: #1B1D1F;
+}
+
+.nb-of-votes {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #6F757C;
+  margin-left: 4px;
+}
+
+.sold-out {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #EE735D;
 }
 
 body {
@@ -149,16 +172,32 @@ body {
   }
 }
 
+.card img {
+  border-radius: 12px;
+}
+.card .name-price-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+
+.rating-votes-container {
+  display: flex;
+  align-items: center;
+}
+
+.information-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .coffee-list {
   display: flex;
   flex-wrap: wrap; /* Permet le retour à la ligne */
   justify-content: center; /* Centre les éléments horizontalement */
   gap: 32px; /* Ajoute un espacement entre les éléments */
   margin: auto; /* Centre la div */
-}
-
-.card {
-  background-color: #ee735d;
 }
 
 .header {
@@ -181,4 +220,19 @@ body {
   position: relative;
   border-radius: 12px;
   padding: 80px 124px;
+}
+@media (max-width: 1024px) {
+  .collection {
+    width: 944px;
+    padding: 80px 40px;
+  }
+}
+@media (max-width: 960px) {
+  .collection {
+    width: 372px;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 40px 40px;
+    margin: 80px 20px;
+  }
 }/*# sourceMappingURL=style.css.map */

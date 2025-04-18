@@ -1,0 +1,23 @@
+@use '../tools/colors' as *;
+
+.card {
+  img {
+    border-radius: 12px;
+  }
+  .name-price-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+    margin-bottom: 8px;
+  }
+}
+
+.rating-votes-container {
+  display: flex;
+  align-items: center;
+}
+
+.information-container {
+  display: flex;
+  justify-content: space-between;
+}

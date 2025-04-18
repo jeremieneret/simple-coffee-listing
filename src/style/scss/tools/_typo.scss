@@ -1,10 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@use './reset' as *;
+@use './fonts' as *;
+@use './colors' as *;
 
-$DMSans: "DM Sans", sans-serif;
-
-@mixin DMSans($weight, $size) {
-  font-family: $DMSans;
-  font-weight: $weight;
-  font-size: $size;
+.heading {
+  @include DMSans(700, 32px);
+  margin-bottom: 8px;
+  color: $bridesmaid;
 }
 
+.description {
+  @include DMSans(500, 16px);
+  margin-bottom: 20px;
+  color: $pale-sky;
+}
+
+.name {
+  @include DMSans(700, 16px);
+  color: $bridesmaid;
+}
+
+.rating {
+  @include DMSans(700, 14px);
+  color: $bridesmaid;
+  margin-left: 4px;
+}
+
+.price {
+  @include DMSans(700, 14px);
+  background-color: $skeptic;
+  border-radius: 4px;
+  padding: 4px 8px;
+  color: $shark;
+}
+
+.nb-of-votes {
+  @include DMSans(700, 14px);
+  color: $pale-sky;
+  margin-left: 4px;
+}
+
+.sold-out {
+  @include DMSans(700, 14px);
+  color: $burnt-sienna;
+}

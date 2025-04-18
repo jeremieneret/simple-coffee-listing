@@ -1,0 +1,22 @@
+@use '../tools/' as *;
+
+.collection {
+  width: 1094px;
+  height: 855px;
+  background-color: $shark;
+  z-index: 2;
+  position: relative;
+  border-radius: 12px;
+  padding: 80px 124px;
+  @include media-max($tablet-xl) {
+    width: 944px;
+    padding: 80px 40px;
+  }
+  @include media-max($tablet-l) {
+    width: 372px;
+    height: fit-content;
+    padding: 40px 40px;
+    margin: 80px 20px;
+
+  }
+}
