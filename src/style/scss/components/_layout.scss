@@ -1,4 +1,27 @@
-@use '../tools/' as *;
+@use "../tools/" as *;
+
+body {
+  background-color: $woodsmoke;
+  display: flex;
+  justify-content: center;
+}
+
+.background-img {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  width: 100vw;
+  height: 300px;
+  background-image: url(/assets/bg-cafe-lg.jpg);
+  @include media-max($tablet-xl) {
+    background-image: url(/assets/bg-cafe.jpg);
+  }
+  @include media-max($tablet-xs) {
+    background-image: url(/assets/bg-cafe.jpg);
+  }
+}
 
 .collection {
   width: 1094px;
@@ -8,15 +31,19 @@
   position: relative;
   border-radius: 12px;
   padding: 80px 124px;
+  background-image: url("/assets/vector.svg");
+  background-repeat: no-repeat;
+  background-position: top 37px right 290px;
   @include media-max($tablet-xl) {
     width: 944px;
     padding: 80px 40px;
+    background-position: top 37px right 140px;
   }
   @include media-max($tablet-l) {
     width: 372px;
     height: fit-content;
     padding: 40px 40px;
     margin: 80px 20px;
-
+    background-position: top 7px left 186px;
   }
 }

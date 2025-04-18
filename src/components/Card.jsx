@@ -19,7 +19,7 @@ export default function Card({ image, name, price, rating, numberOfVotes, popula
           :
           <img src="/assets/Star.svg" alt="Star" />
         }
-        {popular === true && <p className="popular">popular</p>}
+        {popular === true && <p className="label popular">popular</p>}
       </div>
     </>
   )

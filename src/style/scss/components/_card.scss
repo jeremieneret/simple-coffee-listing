@@ -1,6 +1,7 @@
 @use '../tools/colors' as *;
 
 .card {
+  position: relative;
   img {
     border-radius: 12px;
   }
@@ -20,4 +21,13 @@
 .information-container {
   display: flex;
   justify-content: space-between;
+}
+
+.popular {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background-color: $cream-can;
+  border-radius: 12px;
+  padding: 4px 12px;
 }

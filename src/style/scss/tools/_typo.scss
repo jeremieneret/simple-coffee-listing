@@ -43,3 +43,8 @@
   @include DMSans(700, 14px);
   color: $burnt-sienna;
 }
+
+.label {
+  @include DMSans(700, 10px);
+  color: $cocoa-brown;
+}
