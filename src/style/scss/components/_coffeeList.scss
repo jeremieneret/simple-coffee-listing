@@ -1,7 +1,7 @@
 .coffee-list {
   display: flex;
-  flex-wrap: wrap; /* Permet le retour à la ligne */
-  justify-content: center; /* Centre les éléments horizontalement */
-  gap: 32px; /* Ajoute un espacement entre les éléments */
-  margin: auto; /* Centre la div */
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+  margin: auto;
 }

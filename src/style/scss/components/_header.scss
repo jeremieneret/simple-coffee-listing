@@ -5,6 +5,9 @@
   height: fit-content;
   text-align: center;
   margin-bottom: 40px;
+  @include media-max($tablet-s) {
+    width: 292px;
+  }
   &-container {
     display: flex;
     justify-content: center;

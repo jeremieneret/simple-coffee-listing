@@ -1,12 +1,13 @@
-import Background from './components/Background';
-import CoffeeList from './components/CoffeeList';
+import React, { lazy, Suspense } from 'react';
 import './style/CSS/style.css';
 
 export default function App() {
+  const CoffeeList = lazy(() => import('./components/CoffeeList'));
+
+  const renderLoader = () => <p>Loading</p>;
   return (
-    <>
-      <Background />
+    <Suspense fallback={renderLoader()}>
       <CoffeeList />
-    </>
+    </Suspense>
   )
 }

@@ -15,10 +15,6 @@ export default function Header({ title, description, buttonText1, buttonText2, a
       >
         {buttonText2}
       </button>
-      {/* <img 
-      className="vector"
-      src="/assets/vector.svg" 
-      alt="decoration" /> */}
     </div>
   );
 }
